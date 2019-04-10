@@ -1,0 +1,86 @@
+#main {
+    height: 100vh;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+
+#cover-blog .cover-image{
+    background-image: url("https://images.pexels.com/photos/261662/pexels-photo-261662.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=600&w=900");
+    background-size:cover;
+}
+#cover-blog .cover-overlay{
+    background: rgba(61, 126, 24, 0.658);
+}
+#cover-resume .cover-image{
+    background-image: url("https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=600&w=900");
+    background-size:cover;
+}
+#cover-resume .cover-overlay{
+    background-color: rgba(153, 0, 255, 0.507);
+}
+#cover-project-1  .cover-image{
+    background-image: url("https://masterinstitute.id/assets/img/logo_baru.png");
+    background-size:cover;
+}
+#cover-project-1  .cover-overlay{
+    background-color: rgba(98, 81, 255, 0.507);
+}
+#cover-project-2  .cover-image{
+    background-image: url("https://images.pexels.com/photos/9598/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=600&w=900");
+    background-size:cover;
+}
+#cover-project-2  .cover-overlay{
+    background-color: rgba(253, 124, 107, 0.507);
+}
+
+.cover-link {
+    z-index: 3;
+    color: white;
+    font-size: 40px;
+    font-style: oblique;
+}
+.cover-link:hover{
+    color: white;
+    text-decoration: inherit;
+}
+
+.cover-image {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.cover-overlay{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.cover-row{
+    height: 100%;
+}
+.cover{
+    height: 50%;
+}
+@media screen and ( min-width: 768px ){
+    .cover-row{
+        height: 50%;
+    }
+    .cover{
+        height: 100%;
+    }
+    .cover-link {
+        font-size: 50px;
+    }
+}
